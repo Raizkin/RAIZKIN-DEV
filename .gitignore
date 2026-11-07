@@ -46,3 +46,6 @@ next-env.d.ts
 
 # Superdesign local state (not part of the site)
 .superdesign/
+
+# Backup folders
+backup-before-*/
