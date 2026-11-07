@@ -1,0 +1,39 @@
+{
+  "name": "raizkin-dev",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "build:pages": "cross-env GITHUB_PAGES=true next build"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@vercel/analytics": "^1.5.0",
+    "clsx": "^2.1.1",
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.525.0",
+    "next": "^15.5.26",
+    "pdfjs-dist": "^5.7.284",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
+    "eslint": "^9",
+    "eslint-config-next": "^15.5.26",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "tw-animate-css": "^1.3.6",
+    "typescript": "^5"
+  }
+}

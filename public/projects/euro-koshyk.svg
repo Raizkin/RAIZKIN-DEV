@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="690" viewBox="0 0 1100 690">
+<rect width="1100" height="690" fill="#eff7ed"/>
+<rect width="1100" height="60" fill="#16372c" opacity=".075"/>
+<text x="65" y="40" font-family="Arial, sans-serif" font-size="18" fill="#16372c" opacity=".75">PRODUCT CATALOGUE</text>
+<text x="70" y="260" font-family="Arial, sans-serif" font-weight="bold" font-size="78" fill="#16372c">ЄВРО КОШИК</text>
+<text x="70" y="354" font-family="Arial, sans-serif" font-size="51" fill="#16372c">Знахідки на кожен день</text>
+<rect x="70" y="418" rx="30" width="225" height="62" fill="#2e8b58"/>
+<text x="112" y="456" font-family="Arial,sans-serif" font-size="20" fill="#ffffff">Explore →</text>
+<circle cx="865" cy="315" r="205" fill="#2e8b58" opacity=".24"/>
+<circle cx="895" cy="350" r="130" fill="#2e8b58" opacity=".38"/>
+<path d="M80 588 H1020" stroke="#16372c" opacity=".17" stroke-width="3"/>
+<text x="75" y="640" font-family="Arial,sans-serif" font-size="19" fill="#16372c" opacity=".6">Illustrative project preview • Replace with real screenshots</text>
+</svg>
