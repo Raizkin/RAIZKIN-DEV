@@ -1,0 +1,124 @@
+.footer {
+    padding: 25px 0px 52px 0px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: 728px) {
+            width: 728px;
+            flex-direction: row;
+        }
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        gap: 8px;
+        transition: 250ms;
+
+
+        &:hover {
+            opacity: .9;
+        }
+
+        &-text {
+            color: $gray-color;
+            font-size: 14px;
+            font-weight: 700;
+            width: 100px;
+        }
+
+        &-img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 166px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__item {
+        &-link {
+            color: $gray-color;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 104.4%;
+            position: relative;
+            transition: width ease-in-out 250ms;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 0%;
+                border-radius: 2px;
+                border-bottom: 2px solid $accent-color;
+                transition: width ease-in-out 250ms;
+            }
+
+            &:hover {
+                opacity: .8;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__nums {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__num:first-child>&__num-link {
+        color: $accent-color;
+
+        &:hover {
+            color: $gray-color;
+        }
+    }
+
+    &__num:last-child>&__num-link {
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__num {
+        &-link {
+            color: $gray-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            transition: 250ms;
+
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.header__burger {
+  display: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 3px;
+    border-radius: 999px;
+    background-color: burlywood;
+
+    &+span {
+      margin-top: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 16px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop__inner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.backdrop__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.backdrop__close {
+  border: none;
+  background: #1c2540;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.backdrop__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.backdrop__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.backdrop__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #1c2540;
+  font-size: 20px;
+  position: relative;
+  transition: width ease-in-out 250ms;
+
+  .backdrop__list > .backdrop__item:not(:last-child) > & {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      border-radius: 2px;
+      border-bottom: 2px solid $accent-color;
+      transition: width ease-in-out 250ms;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.backdrop__link--btn {
+  border: 1px solid #1c2540;
+  border-radius: 10px;
+  padding: 10px 18px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

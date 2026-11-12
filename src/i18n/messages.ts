@@ -110,5 +110,5 @@ const uk: WidenStrings<typeof en> = {
 export const dictionaries = { uk, en }
 export type Locale = keyof typeof dictionaries
 export type Dictionary = typeof en
-export const DEFAULT_LOCALE: Locale = "uk"
+export const DEFAULT_LOCALE: Locale = "en"
 export const LOCALE_KEY = "raizkin-site-language"

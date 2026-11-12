@@ -51,3 +51,16 @@ next-env.d.ts
 backup-before-*/
 
 
+**/node_modules/
+**/.next/
+**/.parcel-cache/
+**/dist/
+
+**/.env
+**/.env.*
+!**/.env.example
+
+**/*.db
+**/*.db-*
+**/*.sqlite*
+**/*.zip

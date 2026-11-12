@@ -1,0 +1,2 @@
+let e=document.querySelector("[data-modal-header]"),d=document.querySelector("[data-modal-header-open]"),c=document.querySelector("[data-modal-header-close]");if(e&&d&&c){let t=e.querySelectorAll(".backdrop__link");function o(){e.classList.add("is-hidden"),document.body.classList.remove("no-scroll")}d.addEventListener("click",function(){e.classList.remove("is-hidden"),document.body.classList.add("no-scroll")}),c.addEventListener("click",o),t.forEach(e=>e.addEventListener("click",o))}
+//# sourceMappingURL=bohonos-school.0af7c26a.js.map

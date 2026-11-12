@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "build:pages": "cross-env GITHUB_PAGES=true next build"
+    "build:pages": "cross-env GITHUB_PAGES=true next build",
+    "prebuild": "npm --prefix showcases/euro-koshyk ci && npm --prefix showcases/euro-koshyk run build && npm --prefix showcases/bohonos-school ci && npm --prefix showcases/bohonos-school run build:portfolio"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

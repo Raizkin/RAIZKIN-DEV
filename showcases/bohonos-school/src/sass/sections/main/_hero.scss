@@ -1,0 +1,87 @@
+.hero {
+  padding: 50px 0px 20px 0px;
+  background-color: $color-brand-cream;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+
+    @media screen and (max-width: 728px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__content {
+    max-width: 480px;
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1;
+    margin: 0px 0px 20px 0px;
+
+    @media screen and (min-width: 728px) {
+      font-size: 55px;
+    }
+  }
+
+  &__subtitle {
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 728px) {
+      font-size: 18px;
+    }
+  }
+
+  &__note {
+    color: #222;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 728px) {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    background: $accent-color;
+    border-radius: 9px;
+    padding: 14px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 250ms;
+    display: inline-flex;
+    box-shadow: 0 10px 24px #0000002e;
+    margin-top: 20px;
+
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.48px;
+    transition: 250ms;
+
+    &:hover {
+      background: $why-us-bg;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 728px) {
+      width: 300px;
+    }
+  }
+}

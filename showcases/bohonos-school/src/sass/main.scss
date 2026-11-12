@@ -1,0 +1,50 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/common";
+@import "./base/container";
+
+@import "./sections/header";
+@import "./sections/main/hero";
+@import "./sections/main/learn";
+@import "./sections/main/krok";
+@import "./sections/main/help";
+@import "./sections/footer";
+
+@import "./sections/main/menu";
+
+
+.portfolio-return {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 9999;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 20px;
+  border-radius: 14px;
+
+  background: #171717;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background: #7c3aed;
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 480px) {
+    left: 12px;
+    bottom: 12px;
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+}

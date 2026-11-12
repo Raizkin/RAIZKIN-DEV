@@ -1,0 +1,34 @@
+{
+  "name": "bohonos-school",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /bohonos-school/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build:portfolio": "parcel build src/index.html --dist-dir ../../public/showcase/bohonos --public-url /showcase/bohonos/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raizkin/bohonos-school.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raizkin/bohonos-school/issues"
+  },
+  "homepage": "https://github.com/Raizkin/bohonos-school#readme",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.16.1",
+    "modern-normalize": "^3.0.1",
+    "parcel": "^2.16.1",
+    "sass": "^1.94.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "posthtml-include": "^2.0.1"
+  }
+}

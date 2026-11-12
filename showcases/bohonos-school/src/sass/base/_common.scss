@@ -1,0 +1,19 @@
+html {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    // scrollbar-color: white gray;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    // font-family: "Manrope", sans-serif;
+    // font-family: "Inter", sans-serif;
+    // font-family: "Nunito Sans", sans-serif;
+    // font-family: "Rubik Mono One", monospace;
+    font-family: "Rubik", sans-serif;
+    // font-family: "Rubik Bubbles", system-ui;
+    // font-family: "Ruslan Display", sans-serif;
+    background-color: $color-brand-cream-dark-bcg;
+}

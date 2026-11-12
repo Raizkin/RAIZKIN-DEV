@@ -72,8 +72,8 @@ export function Projects() {
             return Math.max(
               0,
               trackLeft +
-                cardCenter -
-                window.innerWidth / 2
+              cardCenter -
+              window.innerWidth / 2
             )
           }
 
@@ -292,13 +292,13 @@ export function Projects() {
                   ((e.clientX - rect.left) /
                     rect.width -
                     0.5) *
-                    12
+                  12
                 )
 
                 rx(
                   -(
                     (e.clientY - rect.top) /
-                      rect.height -
+                    rect.height -
                     0.5
                   ) * 12
                 )
@@ -419,17 +419,45 @@ function ProjectCard({
         <div className="relative h-52 overflow-hidden">
           {project.image ? (
             <>
-              <div className="project-img absolute -inset-x-[10%] inset-y-0">
-                <Image
-                  src={asset(project.image)}
-                  alt={project.title}
-                  fill
-                  sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
+
+              
+
+<div
+  className={`project-img absolute inset-y-0 ${
+    project.title === "Euro Koshyk"
+      ? "inset-x-0 bg-[#ff0000]"
+      : project.title === "Bohonos English School"
+        ? "inset-x-0 bg-[#f9f1e9]"
+        : "-inset-x-[10%]"
+  }`}
+>
+  <Image
+    src={asset(project.image)}
+    alt={project.title}
+    fill
+    sizes="(min-width: 1280px) 520px, (min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
+    className={
+      project.title === "Bohonos English School"
+        ? "object-cover object-center transition-transform duration-700 group-hover:scale-105"
+        : project.title === "Euro Koshyk"
+          ? "object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+          : "object-cover transition-transform duration-700 group-hover:scale-110"
+    }
+  />
+</div>
+
+
+
 
               <div className="absolute inset-0 bg-gradient-to-t from-[rgb(0_0_0/0.7)] via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+              {project.link && (
+                <a
+                  href={project.link}
+                  aria-label={`Open ${project.title}`}
+                  className="absolute inset-0 z-[5]"
+                />
+              )}
 
               <div className="absolute right-3 top-3 z-10 flex gap-2.5">
                 {project.github && (
@@ -448,8 +476,6 @@ function ProjectCard({
                 {project.link && (
                   <a
                     href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="group/live inline-flex min-h-11 items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 pl-4 pr-3 text-sm font-extrabold text-black shadow-xl shadow-black/60 ring-2 ring-white/80 transition duration-300 hover:-translate-y-0.5 hover:brightness-110 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
                     aria-label={`${t.projects.visit} ${project.title}`}
                   >
@@ -474,15 +500,13 @@ function ProjectCard({
             {project.link ? (
               <a
                 href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="hover:text-blue-300"
               >
                 {project.title}
               </a>
             ) : (
               project.title
-            )}
+            )}  
           </h3>
 
           <p className="mb-5 line-clamp-3 flex-1 text-gray-400">

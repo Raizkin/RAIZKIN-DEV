@@ -42,54 +42,64 @@ export const profile = {
     "discord": ""
   },
   "projects": [
+
     {
       "title": "Bohonos English School",
       "description": "A welcoming responsive English-language school website with a polished learning journey and practical course information.",
-      "image": "/projects/bohonos.svg",
+      "image": "/projects/bohonos-banner.png",
       "tags": [
-        "React",
-        "CSS",
+        "HTML",
+        "SCSS",
+        "JavaScript",
         "Responsive"
       ],
-      "link": "https://bohonos.school",
+      "link": "/showcase/bohonos/index.html",
       "github": ""
     },
+
+
     {
       "title": "Euro Koshyk",
-      "description": "A responsive catalogue and storefront concept with product categories, reusable cards, search and filters.",
-      "image": "/projects/euro-koshyk.svg",
+      "description": "A responsive European goods storefront with product categories, search and a modern shopping experience.",
+      "image": "/projects/euro-koshyk.jpg",
       "tags": [
         "React",
         "Tailwind CSS",
-        "UI"
+        "Vite"
       ],
-      "link": "",
+      "link": "/showcase/euro-koshyk",
       "github": ""
     },
+
+
     {
       "title": "Weather Dashboard",
-      "description": "A weather experience with city search, forecast cards and integrated weather and news APIs.",
+      "description": "An interactive weather experience with real-time conditions, city search, hourly updates and a 7-day forecast.",
       "image": "/projects/weather.svg",
       "tags": [
         "React",
-        "API",
-        "Tailwind CSS"
+        "Next.js",
+        "Tailwind CSS",
+        "API"
       ],
-      "link": "",
+      "link": "/weather",
       "github": ""
     },
-    {
-      "title": "Discord Bot Project",
-      "description": "Discord community management workflows: applications, tickets, roles, activity logs and moderation.",
-      "image": "/projects/discord-bot.svg",
-      "tags": [
-        "Node.js",
-        "discord.js",
-        "SQLite"
-      ],
-      "link": "",
-      "github": ""
-    }
+
+    
+{
+  "title": "KnoxBot",
+  "description": "A custom Discord automation bot featuring applications, tickets, role management and moderation workflows.",
+  "image": "/projects/discord-bot.svg",
+  "tags": [
+    "Node.js",
+    "discord.js",
+    "SQLite"
+  ],
+  "link": "/projects/knoxbot",
+  "github": ""
+},
+
   ],
   "skills": [
     {

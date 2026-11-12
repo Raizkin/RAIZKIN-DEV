@@ -1,0 +1,197 @@
+.krok {
+    padding: 55px 0px 90px 0px;
+    color: $gray-color;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        @media screen and (min-width: 728px) {}
+    }
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 26px;
+        text-align: center;
+        width: 100%;
+
+        @media screen and (min-width: 728px) {
+            width: 600px;
+        }
+
+        @media screen and (min-width: 1246px) {
+            width: 933px;
+        }
+
+        &-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 26px;
+
+
+            @media screen and (min-width: 728px) {
+                font-size: 46px;
+                line-height: 1;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+
+            @media screen and (min-width: 728px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        background-color: $white-bcg;
+        border-radius: 30px;
+        padding: 36px 20px;
+        box-shadow: 0 81px 120px -77px rgba(34, 37, 59, 0.04);
+
+        @media screen and (min-width: 728px) {
+            flex-direction: row;
+            border-radius: 40px;
+            padding: 56px 53px;
+            gap: 120px;
+            box-shadow: 0 81px 120px -77px rgba(34, 37, 59, 0.04);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+
+        &:not(:last-child) {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -25px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $gray-transparent-color;
+
+                @media screen and (min-width: 728px) {
+                    width: 1px;
+                    height: 100%;
+                    right: -60px;
+                    bottom: 0;
+                    left: auto;
+                }
+            }
+        }
+
+        @media screen and (min-width: 728px) {
+            gap: 20px;
+        }
+
+        &-num {
+            color: $accent-color;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1;
+
+            @media screen and (min-width: 728px) {
+                font-size: 77px;
+            }
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 19px;
+            margin: 0px 0px 7px 0px;
+
+            @media screen and (min-width: 728px) {
+                font-size: 24px;
+                line-height: 30px;
+                margin: 0px 0px 0px 0px;
+            }
+        }
+
+        &-text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+
+            @media screen and (min-width: 728px) {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__obuchenie {
+        border-radius: 30px;
+        background-color: $white-bcg;
+        padding: 11px 0 22px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 12px;
+        text-align: center;
+
+        @media screen and (max-width: 255px) {
+            padding: 11px 4px;
+        }
+
+        @media screen and (min-width: 728px) {
+            padding: 11px 37px 11px 14px;
+            max-width: 538px;
+            flex-direction: row;
+            gap: 24px;
+            border-radius: 110px;
+        }
+
+
+        &-btn {
+            border-radius: 82px;
+            background: $accent-color;
+            max-width: 249px;
+            margin: 0px auto;
+            padding: 27px 52px;
+
+            color: $color-white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -0.48px;
+            transition: 250ms;
+
+            &:hover {
+                background: $why-us-bg;
+            }
+        }
+
+        &-text {
+            color: $gray-color;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 18px;
+            max-width: 249px;
+
+
+            @media screen and (min-width: 728px) {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+}
