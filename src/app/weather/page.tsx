@@ -8,6 +8,7 @@ import {
   RefreshCw, Search, Sparkles, Sun, Sunrise, Sunset, Thermometer,
   Umbrella, Wind, X,
 } from "lucide-react"
+import Link from "next/link"
 
 type Language = "uk" | "en"
 type Unit = "C" | "F"
@@ -740,15 +741,17 @@ export default function WeatherPage() {
 
       <div className="relative mx-auto max-w-7xl px-5 pb-20 pt-7 sm:px-8 lg:px-10">
         <header className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6">
-          <a
-            href="/#projects"
-            className="group inline-flex items-center gap-3 text-sm font-semibold text-slate-300 transition hover:text-white"
-          >
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] transition group-hover:border-cyan-400/40 group-hover:bg-cyan-400/10">
-              <ArrowLeft size={18} />
-            </span>
-            {t.back}
-          </a>
+          
+<Link
+  href="/#projects"
+  className="group inline-flex items-center gap-3 text-sm font-semibold text-slate-300 transition hover:text-white"
+>
+  <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.05] transition group-hover:border-cyan-400/40 group-hover:bg-cyan-400/10">
+    <ArrowLeft size={18} />
+  </span>
+  {t.back}
+</Link>
+
 
           <div className="flex items-center gap-3">
             <span className="hidden items-center gap-2 text-xs font-medium tracking-[0.14em] text-cyan-300 sm:flex">

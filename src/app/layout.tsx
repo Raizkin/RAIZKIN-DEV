@@ -23,7 +23,7 @@ const isVercel = process.env.NEXT_PUBLIC_DEPLOY_TARGET === "vercel";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: `${profile.name} | ${profile.title}`,
-  description: 	dictionaries.en.about.paragraphs.join(" "),
+  description: dictionaries.en.about.paragraphs.join(" "),
   keywords: ["Next.js", "React", "GSAP", "UI/UX", "Frontend Developer", "Web Developer", "Kyiv"],
   authors: [{ name: `${profile.name}`, url: SITE_URL }],
   creator: `${profile.name}`,
