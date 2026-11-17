@@ -96,7 +96,7 @@ export const profile = {
     "discord.js",
     "SQLite"
   ],
-  "link": "/projects/knoxbot",
+  "link": "",
   "github": ""
 },
 
